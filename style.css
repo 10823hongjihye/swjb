@@ -1,48 +1,60 @@
-*{
-  margin: 0;/*바깥쪽 여백 : 0*/
-  padding: 0;/*안쪽 여백 : 0*/
-  box-sizing: border-box; /*테두리두께 무시*/
+* {
+  margin: 0;
+  /*바깥쪽 여백 : 0*/
+  padding: 0;
+  /*안쪽 여백 : 0*/
+  box-sizing: border-box;
+  /*테두리두께 무시*/
+}
 
+html {
+  scroll-behavior: smooth;
+  /*스크롤 스르륵할 수 있게*/
+}
+
+a {
+  text-decoration: none;
+  /*밑줄 제거*/
+  display: block;
+  /*a태그를 블록요소로 변경*/
+  color: black;
+  /*글자색 : black*/
+}
+
+li {
+  list-style-type: none;
+  /*li태그 기호 제거*/
 }
 
 
 
-html{
-  scroll-behavior: smooth;/*스크롤 스르륵할 수 있게*/
-}
 
 
 
-a{
-  text-decoration: none; /*밑줄 제거*/
-  display: block; /*a태그를 블록요소로 변경*/
-  color: black; /*글자색 : black*/
-}
-li{
-  list-style-type: none; /*li태그 기호 제거*/
-}
-
-.container{
+.container {
   width: 100%;
   height: 1200px;
 
-  background: linear-gradient( rgba(0,0,0,0.8)   , rgba(0,0,0,0.8)    ),url(bg.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg.jpg) no-repeat;
   background-size: cover;
-  
+
   color: white;
-  
 
 }
-.header{
+
+.header {
   width: 100%;
   height: 100px;
 
-  display: flex; /*자식요소들을 가로로 배치*/
-  justify-content: space-between; /*가로로 어떻게 배치할지 : space-between*/
-  align-items: center; /*세로로 어떻게 배치할지 : center*/
+  display: flex;
+  /*자식요소들을 가로로 배치*/
+  justify-content: space-between;
+  /*가로로 어떻게 배치할지 : space-between*/
+  align-items: center;
+  /*세로로 어떻게 배치할지 : center*/
 }
 
-.logo{
+.logo {
   width: 200px;
   height: 80px;
 
@@ -52,14 +64,17 @@ li{
 
   transition: 0.3s;
 }
-.logo:hover{
+
+.logo:hover {
   color: hsl(202, 100%, 71%);
 
 }
 
 
 
-.menu{
+
+
+.menu {
   width: 400px;
   height: 100px;
 
@@ -67,21 +82,27 @@ li{
   align-items: center;
 
 }
-.menu li{
+
+.menu li {
   width: 25%;
+
   text-align: center;
 }
-.menu li a{
 
+.menu li a {
   color: white;
   transition: 0.3s;
 }
-.menu li a:hover{
+
+.menu li a:hover {
   color: hsl(202, 100%, 71%);
 }
 
 
-.main{
+
+
+
+.main {
   width: 1200px;
   height: 800px;
   margin: 0 auto;
@@ -90,19 +111,23 @@ li{
 
   text-align: center;
 }
-.main h1{
+
+.main h1 {
   font-size: 50px;
   margin-bottom: 50px;
 }
-.main h2{
+
+.main h2 {
   font-size: 40px;
   margin-bottom: 30px;
 }
-.main p{
+
+.main p {
   font-size: 30px;
   margin-bottom: 50px;
 }
-.main button{
+
+.main button {
   font-size: 30px;
   width: 300px;
   height: 100px;
@@ -115,76 +140,97 @@ li{
   color: white;
   transition: 0.3s;
 }
-.main button:hover{
-  background-color:hsl(202, 100%, 71%);
+
+.main button:hover {
+  background-color: hsl(202, 100%, 71%);
   color: rgb(23, 43, 46);
 
 
 }
 
-.about{
+
+
+
+
+.about {
   width: 1200px;
   height: 800px;
 
   margin: 0 auto;
   margin-top: 200px;
 }
-.about h2{
+
+.about h2 {
   font-size: 30px;
   color: hsl(202, 100%, 71%);
 
 }
-.about h1{
+
+.about h1 {
   font-size: 50px;
 }
-.about .contents{
+
+.about .contents {
   width: 100%;
   height: 500px;
 
   display: flex;
 
 }
-.about .left{
+
+.about .left {
   width: 400px;
   height: 500px;
 }
-.about .left img{
+
+.about .left img {
   width: 400px;
   height: 500px;
 }
-.about .right{
+
+.about .right {
   width: 800px;
   height: 500px;
   padding-left: 30px;
 
 }
-.about .right h3{
+
+.about .right h3 {
   color: hsl(202, 100%, 71%);
   font-size: 30px;
 }
-.about .right li{
+
+.about .right li {
   font-size: 22px;
   margin-top: 10px;
 }
-.fa-brands{
+
+.fa-brands {
   font-size: 30px;
   margin-right: 6px;
 }
-.fa-youtube{
+
+.fa-youtube {
   color: red;
- 
+
 }
-.fa-facebook{
+
+.fa-facebook {
   color: #3b5998;
 }
 
-.skills{
- width: 100%;/*따로 써줄 필요는 없다*/
- height: 700px;
- background-color: #e7f1f1;
+
+
+
+
+.skills {
+  width: 100%;
+  /*따로 써줄 필요는 없다*/
+  height: 700px;
+  background-color: #e7f1f1;
 }
 
-.skills-inner{
+.skills-inner {
   width: 1200px;
   height: 500px;
 
@@ -192,53 +238,56 @@ li{
   padding-top: 100px;
 }
 
-.skills h2{
+.skills h2 {
   font-size: 30px;
   color: hsl(202, 100%, 71%);
 }
 
-.skills h1{
+.skills h1 {
   font-size: 50px;
 }
-.skills .contents{
+
+.skills .contents {
   width: 100%;
   height: 300px;
   margin-top: 50px;
-  
+
   display: flex;
   justify-content: space-around;
 }
 
-.skills .contents li{
+.skills .contents li {
   width: 350px;
   height: 350px;
   background-color: white;
-  
+
   padding: 10px;
 
   transition: 0.3s;
 }
 
-.skills h3{
+.skills h3 {
   margin-top: 20px;
   text-align: center;
   font-size: 25px;
 }
 
-.skills p{
+.skills p {
   margin-top: 30px;
   text-align: center;
   font-size: 20px;
 
 }
-.skills i{
+
+.skills i {
   color: hsl(202, 100%, 71%);
 }
-.fa-keyboard{
+
+.fa-keyboard {
   font-size: 30px;
 }
 
-.skills .contents li:hover{
+.skills .contents li:hover {
   background-color: hsl(202, 100%, 71%);
   color: white;
 
@@ -246,55 +295,68 @@ li{
   /*transform: rotate(360deg);*/
 }
 
-.skills .contents li:hover i{
+.skills .contents li:hover i {
   color: white;
 }
 
-.bg{
+
+
+
+
+.bg {
   width: 100%;
   height: 800px;
-  background :url(bg2.png) no-repeat;
+  background: url(bg2.png) no-repeat;
   background-size: cover;
 
 
   background-attachment: fixed;
 }
 
-.projects{
+
+
+
+
+.projects {
   height: 1200px;
 }
 
-.contact{
+.contact {
   width: 1200px;
   height: 800px;
   margin: 0 auto;
   margin-top: 100px;
 }
-.contact h2{
+
+.contact h2 {
   font-size: 30px;
   color: hsl(202, 100%, 71%);
 }
 
-.contact h1{
+.contact h1 {
   font-size: 50px;
   padding-bottom: 50px;
 }
-.contact .contents{
+
+.contact .contents {
   width: 1200px;
   height: 600px;
   display: flex;
 }
-.contact .left{
+
+.contact .left {
   width: 400px;
   height: 600px;
 }
-.contact .right{
+
+.contact .right {
   width: 800px;
   height: 600px;
   border-left: 2px dashed #ccc;
   padding-left: 50px;
 }
-.info li{
+
+.info li {
   width: 350px;
   height: 80px;
 
@@ -307,25 +369,25 @@ li{
 }
 
 
-.contact .right p{
- font-size: 25px;
+.contact .right p {
+  font-size: 25px;
 }
 
-.contact .right input{
- width: 700px;
- height: 30px;
- margin-bottom: 30px;
+.contact .right input {
+  width: 700px;
+  height: 30px;
+  margin-bottom: 30px;
 
- border: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 
-.contact .right textarea{
+.contact .right textarea {
   width: 700px;
   height: 300px;
   border: 1px solid #ccc;
 }
 
-.contact .right button{
+.contact .right button {
   width: 700px;
   height: 30px;
   background-color: hsl(202, 100%, 71%);
